@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
+<!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="stock">gtk-apply</property>
   </object>
   <object class="GtkImage" id="image2">
     <property name="visible">True</property>
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="stock">gtk-floppy</property>
   </object>
   <object class="GtkImage" id="image3">
     <property name="visible">True</property>
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="stock">gtk-open</property>
   </object>
   <object class="GtkWindow" id="window_main">
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="title" translatable="yes">CFD Configuration Utility</property>
     <property name="resizable">False</property>
-    <property name="window_position">center</property>
+    <property name="window-position">center</property>
     <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
-    <child>
-      <placeholder/>
-    </child>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkCheckButton" id="GEN_CB">
                 <property name="label" translatable="yes">Global Enable</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
                 <property name="active">True</property>
-                <property name="draw_indicator">True</property>
+                <property name="draw-indicator">True</property>
                 <signal name="toggled" handler="on_GEN_CB_toggled" swapped="no"/>
               </object>
               <packing>
@@ -56,9 +53,9 @@
               <object class="GtkCheckButton" id="GMode_CB">
                 <property name="label" translatable="yes">Global Mode</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="draw_indicator">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">True</property>
                 <signal name="toggled" handler="on_GMode_CB_toggled" swapped="no"/>
               </object>
               <packing>
@@ -72,9 +69,9 @@
               <object class="GtkCheckButton" id="Neg_Pol_CB">
                 <property name="label" translatable="yes">Negative Polarity</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="draw_indicator">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">True</property>
                 <signal name="toggled" handler="on_Neg_Pol_CB_toggled" swapped="no"/>
               </object>
               <packing>
@@ -88,9 +85,9 @@
               <object class="GtkCheckButton" id="Internal_AGND_CB">
                 <property name="label" translatable="yes">External AGND Enable</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="draw_indicator">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">True</property>
                 <signal name="toggled" handler="on_Internal_AGND_CB_toggled" swapped="no"/>
               </object>
               <packing>
@@ -104,9 +101,9 @@
               <object class="GtkCheckButton" id="LE_OUT_ENABLE">
                 <property name="label" translatable="yes">LE Out Enable</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="draw_indicator">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">True</property>
                 <signal name="toggled" handler="on_LE_OUT_ENABLE_toggled" swapped="no"/>
               </object>
               <packing>
@@ -126,11 +123,11 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Nowlin Mode</property>
               </object>
               <packing>
@@ -143,10 +140,10 @@
             <child>
               <object class="GtkComboBoxText" id="Nowlin_Mode_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_right">10</property>
+                <property name="can-focus">False</property>
+                <property name="margin-right">10</property>
                 <property name="active">0</property>
-                <property name="active_id">nowlin_mode_short</property>
+                <property name="active-id">nowlin_mode_short</property>
                 <items>
                   <item id="nowlin_mode_short" translatable="yes">Short</item>
                   <item id="nowlin_mode_long" translatable="yes">Long</item>
@@ -162,7 +159,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Lockout Mode</property>
               </object>
               <packing>
@@ -175,9 +172,9 @@
             <child>
               <object class="GtkComboBoxText" id="Lockout_Mode_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">2</property>
-                <property name="active_id">lockout_mode_disabled</property>
+                <property name="active-id">lockout_mode_disabled</property>
                 <items>
                   <item id="lockout_mode_short" translatable="yes">Short</item>
                   <item id="lockout_mode_long" translatable="yes">Long</item>
@@ -201,11 +198,11 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Nowlin Delay (ns)</property>
               </object>
               <packing>
@@ -217,9 +214,9 @@
             <child>
               <object class="GtkComboBoxText" id="Nowlin_Delay_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">1</property>
-                <property name="popup_fixed_width">False</property>
+                <property name="popup-fixed-width">False</property>
                 <items>
                   <item translatable="yes">1</item>
                   <item translatable="yes">2</item>
@@ -250,8 +247,8 @@
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">62</property>
+                <property name="can-focus">False</property>
+                <property name="margin-left">62</property>
                 <property name="label" translatable="yes">Lockout DAC</property>
               </object>
               <packing>
@@ -264,13 +261,13 @@
             <child>
               <object class="GtkEntry" id="Lockout_DAC_Box">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="max_length">4</property>
-                <property name="max_width_chars">4</property>
-                <property name="primary_icon_stock">gtk-info</property>
-                <property name="primary_icon_activatable">False</property>
-                <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 5-bits.</property>
-                <property name="placeholder_text" translatable="yes">0x00</property>
+                <property name="can-focus">False</property>
+                <property name="max-length">4</property>
+                <property name="max-width-chars">4</property>
+                <property name="primary-icon-stock">gtk-info</property>
+                <property name="primary-icon-activatable">False</property>
+                <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 5-bits.</property>
+                <property name="placeholder-text" translatable="yes">0x00</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -288,11 +285,11 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Test Point</property>
               </object>
               <packing>
@@ -305,9 +302,9 @@
             <child>
               <object class="GtkComboBoxText" id="Test_Point_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">0</property>
-                <property name="active_id">test_point_avss</property>
+                <property name="active-id">test_point_avss</property>
                 <items>
                   <item id="test_point_avss" translatable="yes">AVSS</item>
                   <item id="test_point_lockout" translatable="yes">Lockout Pulse</item>
@@ -326,8 +323,8 @@
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">1</property>
+                <property name="can-focus">False</property>
+                <property name="margin-top">1</property>
                 <property name="label" translatable="yes">AGND Trim</property>
               </object>
               <packing>
@@ -340,7 +337,7 @@
             <child>
               <object class="GtkComboBoxText" id="AGND_Trim_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">4</property>
                 <items>
                   <item translatable="yes">1.36</item>
@@ -370,11 +367,11 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">CFD Pulse Width (ns)</property>
               </object>
               <packing>
@@ -387,7 +384,7 @@
             <child>
               <object class="GtkComboBoxText" id="CFD_PW_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">0</property>
                 <items>
                   <item id="cfd_50ns" translatable="yes">50</item>
@@ -406,7 +403,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Test Point Channel</property>
               </object>
               <packing>
@@ -419,7 +416,7 @@
             <child>
               <object class="GtkComboBoxText" id="TP_Channel_Menu">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="active">0</property>
                 <items>
                   <item translatable="yes">0</item>
@@ -457,16 +454,16 @@
         <child>
           <object class="GtkBox" id="Channel_Settings_Box">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 0</property>
                   </object>
                   <packing>
@@ -480,10 +477,10 @@
                   <object class="GtkCheckButton" id="Channel0_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel0_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -495,7 +492,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -507,13 +504,13 @@
                 <child>
                   <object class="GtkEntry" id="Channel0_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -525,9 +522,9 @@
                   <object class="GtkCheckButton" id="Channel0_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel0_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -546,11 +543,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 1</property>
                   </object>
                   <packing>
@@ -564,10 +561,10 @@
                   <object class="GtkCheckButton" id="Channel1_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel1_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -579,7 +576,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -591,14 +588,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel1_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -610,9 +607,9 @@
                   <object class="GtkCheckButton" id="Channel1_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel1_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -631,11 +628,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 2</property>
                   </object>
                   <packing>
@@ -649,10 +646,10 @@
                   <object class="GtkCheckButton" id="Channel2_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel2_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -664,7 +661,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -676,14 +673,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel2_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                     <signal name="insert-at-cursor" handler="on_Channel2_LE_DAC_Box_insert_at_cursor" swapped="no"/>
                     <signal name="paste-clipboard" handler="on_Channel2_LE_DAC_Box_paste_clipboard" swapped="no"/>
                   </object>
@@ -697,9 +694,9 @@
                   <object class="GtkCheckButton" id="Channel2_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel2_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -718,11 +715,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 3</property>
                   </object>
                   <packing>
@@ -736,10 +733,10 @@
                   <object class="GtkCheckButton" id="Channel3_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel3_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -751,7 +748,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -763,14 +760,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel3_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -782,9 +779,9 @@
                   <object class="GtkCheckButton" id="Channel3_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel3_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -803,11 +800,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 4</property>
                   </object>
                   <packing>
@@ -821,10 +818,10 @@
                   <object class="GtkCheckButton" id="Channel4_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel4_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -836,7 +833,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -848,14 +845,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel4_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -867,9 +864,9 @@
                   <object class="GtkCheckButton" id="Channel4_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel4_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -888,11 +885,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 5</property>
                   </object>
                   <packing>
@@ -906,10 +903,10 @@
                   <object class="GtkCheckButton" id="Channel5_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel5_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -921,7 +918,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -933,14 +930,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel5_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -952,9 +949,9 @@
                   <object class="GtkCheckButton" id="Channel5_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel5_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -973,11 +970,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 6</property>
                   </object>
                   <packing>
@@ -991,10 +988,10 @@
                   <object class="GtkCheckButton" id="Channel6_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel6_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1006,7 +1003,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1018,14 +1015,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel6_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1037,9 +1034,9 @@
                   <object class="GtkCheckButton" id="Channel6_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel6_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1058,11 +1055,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 7</property>
                   </object>
                   <packing>
@@ -1076,10 +1073,10 @@
                   <object class="GtkCheckButton" id="Channel7_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel7_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1091,7 +1088,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1103,14 +1100,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel7_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1122,9 +1119,9 @@
                   <object class="GtkCheckButton" id="Channel7_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel7_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1143,11 +1140,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 8</property>
                   </object>
                   <packing>
@@ -1161,10 +1158,10 @@
                   <object class="GtkCheckButton" id="Channel8_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel8_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1176,7 +1173,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1188,14 +1185,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel8_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1207,9 +1204,9 @@
                   <object class="GtkCheckButton" id="Channel8_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel8_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1228,11 +1225,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 9</property>
                   </object>
                   <packing>
@@ -1246,10 +1243,10 @@
                   <object class="GtkCheckButton" id="Channel9_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel9_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1261,7 +1258,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1273,14 +1270,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel9_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1292,9 +1289,9 @@
                   <object class="GtkCheckButton" id="Channel9_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel9_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1313,11 +1310,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 10</property>
                   </object>
                   <packing>
@@ -1330,10 +1327,10 @@
                   <object class="GtkCheckButton" id="Channel10_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel10_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1345,7 +1342,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1357,14 +1354,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel10_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1376,9 +1373,9 @@
                   <object class="GtkCheckButton" id="Channel10_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel10_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1397,11 +1394,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 11</property>
                   </object>
                   <packing>
@@ -1414,10 +1411,10 @@
                   <object class="GtkCheckButton" id="Channel11_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel11_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1429,7 +1426,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1441,14 +1438,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel11_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1460,9 +1457,9 @@
                   <object class="GtkCheckButton" id="Channel11_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel11_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1481,11 +1478,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 12</property>
                   </object>
                   <packing>
@@ -1498,10 +1495,10 @@
                   <object class="GtkCheckButton" id="Channel12_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel12_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1513,7 +1510,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1525,14 +1522,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel12_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1544,9 +1541,9 @@
                   <object class="GtkCheckButton" id="Channel12_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel12_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1565,11 +1562,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 13</property>
                   </object>
                   <packing>
@@ -1582,10 +1579,10 @@
                   <object class="GtkCheckButton" id="Channel13_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel13_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1597,7 +1594,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1609,14 +1606,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel13_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1628,9 +1625,9 @@
                   <object class="GtkCheckButton" id="Channel13_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel13_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1649,11 +1646,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 14</property>
                   </object>
                   <packing>
@@ -1666,10 +1663,10 @@
                   <object class="GtkCheckButton" id="Channel14_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel14_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1681,7 +1678,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1693,14 +1690,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel14_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1712,9 +1709,9 @@
                   <object class="GtkCheckButton" id="Channel14_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel14_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1733,11 +1730,11 @@
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Channel 15</property>
                   </object>
                   <packing>
@@ -1750,10 +1747,10 @@
                   <object class="GtkCheckButton" id="Channel15_EN_CB">
                     <property name="label" translatable="yes">Enable</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
                     <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel15_EN_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1765,7 +1762,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Leading Edge DAC</property>
                   </object>
                   <packing>
@@ -1777,14 +1774,14 @@
                 <child>
                   <object class="GtkEntry" id="Channel15_LE_DAC_Box">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="max_length">4</property>
-                    <property name="max_width_chars">4</property>
-                    <property name="primary_icon_stock">gtk-info</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="primary_icon_tooltip_text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="primary_icon_tooltip_markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
-                    <property name="placeholder_text" translatable="yes">0x00</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">4</property>
+                    <property name="max-width-chars">4</property>
+                    <property name="primary-icon-stock">gtk-info</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-tooltip-text" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 6-bits MSB is sign bit.</property>
+                    <property name="placeholder-text" translatable="yes">0x00</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1796,9 +1793,9 @@
                   <object class="GtkCheckButton" id="Channel15_Sign_CB">
                     <property name="label" translatable="yes">Sign bit</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
                     <signal name="toggled" handler="on_Channel15_Sign_CB_toggled" swapped="no"/>
                   </object>
                   <packing>
@@ -1824,7 +1821,7 @@
         <child>
           <object class="GtkSeparator">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -1836,15 +1833,116 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">I2C chip number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">5</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="I2C_Select_Menu1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="active">1</property>
+                <property name="popup-fixed-width">False</property>
+                <items>
+                  <item translatable="yes">0</item>
+                  <item translatable="yes">1</item>
+                  <item translatable="yes">2</item>
+                  <item translatable="yes">3</item>
+                  <item translatable="yes">4</item>
+                  <item translatable="yes">5</item>
+                  <item translatable="yes">6</item>
+                  <item translatable="yes">7</item>
+                  <item translatable="yes">8</item>
+                  <item translatable="yes">9</item>
+                  <item translatable="yes">10</item>
+                  <item translatable="yes">11</item>
+                  <item translatable="yes">12</item>
+                  <item translatable="yes">13</item>
+                  <item translatable="yes">14</item>
+                  <item translatable="yes">15</item>
+                </items>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="padding">10</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">I2C chip 0 address</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">10</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="I2C_address0_Box1">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="max-length">4</property>
+                <property name="max-width-chars">4</property>
+                <property name="primary-icon-stock">gtk-info</property>
+                <property name="primary-icon-activatable">False</property>
+                <property name="primary-icon-tooltip-text" translatable="yes">Enter the I2C address of chip 0 of the multiplexer in Hex. </property>
+                <property name="primary-icon-tooltip-markup" translatable="yes">Enter a value for the DAC in decimal or Hex. DAC is 5-bits.</property>
+                <property name="placeholder-text" translatable="yes">0x00</property>
+                <property name="input-purpose">alpha</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">4</property>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">10</property>
+            <property name="position">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkButton" id="Load_Config_Button">
                 <property name="label" translatable="yes">Load</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="image">image3</property>
-                <property name="image_position">right</property>
+                <property name="image-position">right</property>
                 <signal name="clicked" handler="on_Load_Config_Button_clicked" swapped="no"/>
               </object>
               <packing>
@@ -1856,8 +1954,8 @@
             <child>
               <object class="GtkEntry" id="Load_File_Name_Box">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="placeholder_text" translatable="yes">Enter a filename</property>
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">Enter a filename</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -1869,21 +1967,21 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">7</property>
+            <property name="position">9</property>
           </packing>
         </child>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkButton" id="Save_Config_Button">
                 <property name="label" translatable="yes">Save</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="image">image2</property>
-                <property name="image_position">right</property>
+                <property name="image-position">right</property>
                 <signal name="clicked" handler="on_Save_Config_Button_clicked" swapped="no"/>
               </object>
               <packing>
@@ -1895,8 +1993,8 @@
             <child>
               <object class="GtkEntry" id="Save_File_Name_Box">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="placeholder_text" translatable="yes">Enter a filename</property>
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">Enter a filename</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -1908,38 +2006,38 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">8</property>
+            <property name="position">10</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="Configure_Button">
             <property name="label" translatable="yes">Configure Chip</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
             <property name="image">image1</property>
-            <property name="image_position">right</property>
-            <property name="always_show_image">True</property>
+            <property name="image-position">right</property>
+            <property name="always-show-image">True</property>
             <signal name="clicked" handler="on_Configure_Button_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">9</property>
+            <property name="position">11</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="RST_Button">
             <property name="label" translatable="yes">Pulse RST_L</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
             <signal name="clicked" handler="on_RST_Button_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">10</property>
+            <property name="position">12</property>
           </packing>
         </child>
       </object>
