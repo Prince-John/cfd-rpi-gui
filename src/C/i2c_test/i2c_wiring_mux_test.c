@@ -20,18 +20,9 @@ void ms_delay(int val){
 int main() {
 
     fd = wiringPiI2CSetup(Device_Address);
-
-    wiringPiI2CWrite(fd, MUX_CH01);
-    ms_delay(50);
-    wiringPiI2CWrite(fd, MUX_CH02);
-    ms_delay(50);
-    wiringPiI2CWrite(fd, MUX_CH01);
-    ms_delay(50);
-    wiringPiI2CWrite(fd, MUX_CH02);
-    ms_delay(50);
-    wiringPiI2CWrite(fd, MUX_CH01);
-    ms_delay(50);
-    wiringPiI2CWrite(fd, MUX_CH02);
+    printf("fd is  %d",fd);
+    wiringPiI2CWrite (fd, MUX_CH01);
+    printf("writing to mux %d",MUX_CH01);
     ms_delay(50);
 
 
