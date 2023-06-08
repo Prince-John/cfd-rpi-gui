@@ -10,10 +10,30 @@
 
 int fd;
 
+void ms_delay(int val){
+    int i,j;
+    for(i=0;i<=val;i++)
+        for(j=0;j<1200;j++);
+}
+
+
 int main() {
 
     fd = wiringPiI2CSetup(Device_Address);
 
     wiringPiI2CWrite(fd, MUX_CH01);
+    ms_delay(50);
+    wiringPiI2CWrite(fd, MUX_CH02);
+    ms_delay(50);
+    wiringPiI2CWrite(fd, MUX_CH01);
+    ms_delay(50);
+    wiringPiI2CWrite(fd, MUX_CH02);
+    ms_delay(50);
+    wiringPiI2CWrite(fd, MUX_CH01);
+    ms_delay(50);
+    wiringPiI2CWrite(fd, MUX_CH02);
+    ms_delay(50);
+
+
 
 }
