@@ -22,7 +22,7 @@ int main() {
     fd = wiringPiI2CSetup(Device_Address);
     printf("fd is  %d \n",fd);
     wiringPiI2CWrite (fd, MUX_CH01);
-    printf("writing to mux %b",MUX_CH01);
+    printf("writing to mux %s",MUX_CH01);
     ms_delay(50);
 
 
