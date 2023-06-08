@@ -14,6 +14,6 @@ int main() {
 
     fd = wiringPiI2CSetup(Device_Address);
 
-    wiringPiI2CWriteReg8 (fd, MUX_CH01);
+    wiringPiI2CWrite(fd, MUX_CH01);
 
 }
