@@ -21,8 +21,10 @@ int main() {
 
     fd = wiringPiI2CSetup(Device_Address);
     printf("fd is  %d \n",fd);
+    ms_delay(50);
+    ms_delay(50);
     wiringPiI2CWrite (fd, MUX_CH01);
-    printf("writing to mux %s",MUX_CH01);
+    printf("writing to mux %d",MUX_CH01);
     ms_delay(50);
 
 
