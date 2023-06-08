@@ -8,7 +8,7 @@
 #define MUX_CH02 0b00000010
 
 
-
+int fd;
 
 int main() {
 
