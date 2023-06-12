@@ -68,15 +68,22 @@ int main(int argc, char **argv) {
     fd = wiringPiI2CSetup(Device_Address);
     fd1 = wiringPiI2CSetup(Device_Address+3);
 
-    printf("the value of fd1 is, %d \n",fd1);
-    set_mux_channel(fd,0);
-    wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,1);
-    wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,2);
-    wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,3);
-    wiringPiI2CWrite (fd1, 0xFF);
+    printf("Re-setting MUX to default channel 0\n*********************************\n Enter a MUX channel 0-7");
+
+    char input_str[1];
+
+    while (1){
+
+        if(fgets (str1, 1, stdin) != NULL) {
+            /* writing content to stdout */
+            printf("%s", str1);
+        }
+
+
+
+    }
+
+    return 0;
 
 
 }
