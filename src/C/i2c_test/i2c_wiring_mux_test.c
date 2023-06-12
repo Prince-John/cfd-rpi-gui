@@ -7,6 +7,11 @@
 #define MUX_CH0 0b00000001
 #define MUX_CH1 0b00000010
 #define MUX_CH2 0b00000100
+#define MUX_CH3 0b00001000
+#define MUX_CH4 0b00010000
+#define MUX_CH5 0b00100000
+#define MUX_CH6 0b01000000
+#define MUX_CH7 0b10000000
 
 int fd;
 int fd1;
