@@ -54,8 +54,9 @@ void set_mux_channel(int fd, int channel){
         default:
             wiringPiI2CWrite (fd, MUX_CH0);
             if(verbose == 1){
-                printf("%d is not a valid selection.\n", channel);
+                printf("%d is not a valid selection. Default setting\n", channel);
             }
+            return;
             break;
     }
     if(verbose == 1){
@@ -80,11 +81,11 @@ int main(int argc, char **argv) {
 
         fgets (input_str, 2, stdin);
 
-        printf("%s is the output of fgets",input_str);
+        printf("%s is the output of fgets\n",input_str);
         channel= strtol(input_str, &ptr, 10);
-        printf("%d is the output of strtol", channel);
+        printf("%d is the output of strtol\n", channel);
         set_mux_channel(fd, channel);
-        printf("DEBUG STATEMENT ************************");
+        printf("DEBUG STATEMENT ************************\n");
         ms_delay(10);
     }
 
