@@ -53,6 +53,9 @@ void set_mux_channel(int fd, int channel){
             break;
         default:
             wiringPiI2CWrite (fd, MUX_CH0);
+            if(verbose == 1){
+                printf("%d is not a valid selection.\n", channel);
+            }
             break;
     }
     if(verbose == 1){
@@ -70,17 +73,14 @@ int main(int argc, char **argv) {
 
     printf("Re-setting MUX to default channel 0\n*********************************\nEnter a MUX channel 0-7\n");
 
-    char input_str[5];
-
+    char input_str[2];
+    char *ptr;
+    int channel;
     while (1){
 
-        fgets (input_str, 5, stdin);
-
-        printf("%s \n", input_str);
-
-
-
-
+        fgets (input_str, 2, stdin);
+        channel= strtol(input_str, &ptr, 10);
+        set_mux_channel(fd, channel);
     }
 
     return 0;
