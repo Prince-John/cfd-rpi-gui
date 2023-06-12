@@ -70,15 +70,14 @@ int main(int argc, char **argv) {
 
     printf("Re-setting MUX to default channel 0\n*********************************\nEnter a MUX channel 0-7\n");
 
-    char input_str[1];
+    char input_str[5];
 
     while (1){
 
-        if(fgets (input_str, 2, stdin) != NULL) {
-            /* writing content to stdout */
-            printf("%s", input_str);
-        }
+        fgets (input_str, 5, stdin);
+
         printf("%s", input_str);
+
 
 
 
