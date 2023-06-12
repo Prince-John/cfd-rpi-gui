@@ -76,7 +76,7 @@ int main(int argc, char **argv) {
 
         fgets (input_str, 5, stdin);
 
-        printf("%s", input_str);
+        printf("%s \n", input_str);
 
 
 
