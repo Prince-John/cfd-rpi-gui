@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
     fd = wiringPiI2CSetup(Device_Address);
     fd1 = wiringPiI2CSetup(Device_Address+3);
 
-    printf("Re-setting MUX to default channel 0\n*********************************\n Enter a MUX channel 0-7");
+    printf("Re-setting MUX to default channel 0\n*********************************\nEnter a MUX channel 0-7\n");
 
     char input_str[1];
 
