@@ -74,12 +74,12 @@ int main(int argc, char **argv) {
 
     printf("Re-setting MUX to default channel 0\n*********************************\nEnter a MUX channel 0-7\n");
 
-    char input_str[2];
+    char input_str[1];
     char *ptr;
     int channel;
     while (1){
 
-        if(fgets (input_str, 2, stdin) != NULL) {
+        if(fgets (input_str, 1, stdin) != NULL) {
 
             printf("%s is the output of fgets\n", input_str);
             channel = strtol(input_str, &ptr, 10);
