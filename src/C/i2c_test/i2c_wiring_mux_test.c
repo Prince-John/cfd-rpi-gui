@@ -9,6 +9,7 @@
 #define MUX_CH2 0b00000100
 
 int fd;
+int fd1;
 int verbose =1;
 
 void ms_delay(int val){
@@ -61,6 +62,8 @@ int main(int argc, char **argv) {
 
     fd = wiringPiI2CSetup(Device_Address);
     fd1 = wiringPiI2CSetup(Device_Address+3);
+
+    printf("the value of fd1 is, %d",fd1);
     set_mux_channel(fd,1);
     wiringPiI2CWrite (fd1, 0xFF);
     set_mux_channel(fd,2);
