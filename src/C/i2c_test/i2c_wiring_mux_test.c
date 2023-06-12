@@ -79,8 +79,13 @@ int main(int argc, char **argv) {
     while (1){
 
         fgets (input_str, 2, stdin);
+
+        printf("%s is the output of fgets",input_str);
         channel= strtol(input_str, &ptr, 10);
+        printf("%d is the output of strtol", channel);
         set_mux_channel(fd, channel);
+        printf("DEBUG STATEMENT ************************");
+        ms_delay(10);
     }
 
     return 0;
