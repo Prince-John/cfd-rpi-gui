@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 
     while (1){
 
-        if(fgets (str1, 1, stdin) != NULL) {
+        if(fgets (input_str, 1, stdin) != NULL) {
             /* writing content to stdout */
             printf("%s", str1);
         }
