@@ -4,9 +4,9 @@
 #include <wiringPi.h>
 
 #define Device_Address 0x70
-#define MUX_CH01 0b00000001
-#define MUX_CH02 0b00000010
-
+#define MUX_CH0 0b00000001
+#define MUX_CH1 0b00000010
+#define MUX_CH2 0b00000100
 
 int fd;
 
@@ -17,7 +17,7 @@ void ms_delay(int val){
 }
 
 
-int main() {
+int main(int argc, char **argv) {
 
     fd = wiringPiI2CSetup(Device_Address);
     printf("fd is  %d \n",fd);
