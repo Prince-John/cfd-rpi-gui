@@ -79,14 +79,15 @@ int main(int argc, char **argv) {
     int channel;
     while (1){
 
-        fgets (input_str, 2, stdin);
+        if(fgets (input_str, 2, stdin) != NULL) {
 
-        printf("%s is the output of fgets\n",input_str);
-        channel= strtol(input_str, &ptr, 10);
-        printf("%d is the output of strtol\n", channel);
-        set_mux_channel(fd, channel);
-        printf("DEBUG STATEMENT ************************\n");
-        ms_delay(10);
+            printf("%s is the output of fgets\n", input_str);
+            channel = strtol(input_str, &ptr, 10);
+            printf("%d is the output of strtol\n", channel);
+            set_mux_channel(fd, channel);
+            printf("DEBUG STATEMENT ************************\n");
+            ms_delay(10);
+        }
     }
 
     return 0;
