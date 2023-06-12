@@ -56,7 +56,7 @@ void set_mux_channel(int fd, int channel){
             break;
     }
     if(verbose == 1){
-        printf("Setting i2c mux to channel %d", channel);
+        printf("Setting i2c mux to channel %d \n", channel);
     }
     ms_delay(10);
 }
@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
     fd = wiringPiI2CSetup(Device_Address);
     fd1 = wiringPiI2CSetup(Device_Address+3);
 
-    printf("the value of fd1 is, %d",fd1);
+    printf("the value of fd1 is, %d \n",fd1);
     set_mux_channel(fd,1);
     wiringPiI2CWrite (fd1, 0xFF);
     set_mux_channel(fd,2);
