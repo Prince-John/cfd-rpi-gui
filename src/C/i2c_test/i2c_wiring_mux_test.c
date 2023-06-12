@@ -78,6 +78,7 @@ int main(int argc, char **argv) {
             /* writing content to stdout */
             printf("%s", input_str);
         }
+        printf("%s", input_str);
 
 
 
