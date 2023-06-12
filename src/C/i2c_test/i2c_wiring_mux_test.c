@@ -63,11 +63,11 @@ int main(int argc, char **argv) {
     fd1 = wiringPiI2CSetup(Device_Address+3);
     set_mux_channel(fd,1);
     wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,2)
+    set_mux_channel(fd,2);
     wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,3)
+    set_mux_channel(fd,3);
     wiringPiI2CWrite (fd1, 0xFF);
-    set_mux_channel(fd,4)
+    set_mux_channel(fd,4);
     wiringPiI2CWrite (fd1, 0xFF);
 
 
