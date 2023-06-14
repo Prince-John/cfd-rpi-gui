@@ -850,7 +850,7 @@ void on_Load_Config_Button_clicked()
 	if(fd == NULL)
 	{
 		perror("Failed to open file\n");
-        return(-1);
+        return;
 	}
 
 	/* Load configuration data and update GUI */
