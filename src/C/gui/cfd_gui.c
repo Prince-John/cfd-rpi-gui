@@ -847,10 +847,10 @@ void on_Load_Config_Button_clicked()
 	FILE* fd = fopen((const char*)filename, "r");
 	gchar str[7];
 
-	if(!fd)
+	if(fd == NULL)
 	{
 		perror("Failed to open file\n");
-		exit(EXIT_FAILURE);
+        return(-1)
 	}
 
 	/* Load configuration data and update GUI */
